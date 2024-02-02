@@ -13,7 +13,7 @@ const create = async () => {
     // console.log("path", pathToNewFile);
     // helperWithPath("fresh.txt");
     await fsPromises.writeFile(
-      await helperWithPath("fresh.txt"),
+      await helperWithPath("files", "fresh.txt"),
       "I am fresh and young",
       {
         flag: "wx",
