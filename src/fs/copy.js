@@ -16,12 +16,18 @@ const copy = async () => {
     const filesToCopy = await fsPromises.readdir(oldPath);
     console.log("files", filesToCopy);
 
-    filesToCopy.forEach(async (file) => {
+    // filesToCopy.forEach(async (file) => {
+    //   await fsPromises.copyFile(
+    //     path.join(oldPath, file),
+    //     path.join(newPath, file)
+    //   );
+    // });
+    for (let file of filesToCopy) {
       await fsPromises.copyFile(
         path.join(oldPath, file),
         path.join(newPath, file)
       );
-    });
+    }
   } catch (error) {
     throw new Error("FS operation failed");
   }
