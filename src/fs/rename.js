@@ -3,6 +3,7 @@ import fsPromises from "fs/promises";
 import path from "path";
 
 const rename = async () => {
+  // Write your code here
   try {
     const thePath = await helperWithPath("files");
     console.log("path", thePath);

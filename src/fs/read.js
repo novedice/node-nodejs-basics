@@ -2,6 +2,7 @@ import { helperWithPath } from "./helperWithPathes.js";
 import fsPromises from "fs/promises";
 
 const read = async () => {
+  // Write your code here
   try {
     const thePath = await helperWithPath("files", "fileToRead.txt");
     const readedFile = await fsPromises.readFile(thePath, "utf8");

@@ -1,4 +1,5 @@
 const parseArgs = () => {
+  // Write your code here
   const args = process.argv.slice(2);
   const printing = args.reduce((prevVal, curVal, curIndex, array) => {
     let result;

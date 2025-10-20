@@ -4,6 +4,7 @@ import { fileURLToPath } from "url";
 import { helperWithPath } from "./helperWithPathes.js";
 
 const create = async () => {
+  // Write your code here
   try {
     // const __filename = fileURLToPath(import.meta.url);
     // const __dirname = path.dirname(__filename);

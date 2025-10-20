@@ -4,6 +4,7 @@ import fsPromises from "fs/promises";
 import { helperWithPath } from "./helperWithPathes.js";
 
 const copy = async () => {
+  // Write your code here
   try {
     const oldPath = await helperWithPath("files");
     const newPath = await helperWithPath("files_copy");

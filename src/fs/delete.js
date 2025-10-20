@@ -3,6 +3,7 @@ import { helperWithPath } from "./helperWithPathes.js";
 import fsPromises from "fs/promises";
 
 const remove = async () => {
+  // Write your code here
   try {
     const thePath = await helperWithPath("files", "fileToRemove.txt");
     await fsPromises.rm(thePath);
