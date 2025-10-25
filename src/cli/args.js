@@ -13,7 +13,7 @@ const parseArgs = () => {
     }
     return prevVal + result;
   }, "");
-  console.log("printing:", printing);
+  console.log( printing);
 };
 
 parseArgs();
